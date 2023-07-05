@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine Nexus</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="jpg" href="/img/icon.jpg">
+    <script type="text/javascript">
+        var cuty_token = '823ef2f74e1ce7ba9bbaed375';
+        var exclude_domains = ["http://127.0.0.1:5500/","virtualnexus.netlify.app","discord.gg","tiktok.com","cinenexus.netlify.app"];
+    </script>
+    <script src="https://cdn.cuty.io/fps.js"></script>
 </head>
 <body>
-    
+
+    <nav>
+        <img src="/img/icon.jpg" alt="">
+        <h1>Cine Nexus</h1>
+        <header>
+            <button><img src="/img/red-mundial.png" alt="" class="iconos">Redes</button>
+            <button class="nav-button"><img src="/img/consola.png" alt="" class="iconos"><a href="https://virtualnexus.netlify.app/">Juegos</a></button>
+            <button><img src="/img/apoyo.png" alt="" class="iconos">Tutoriales</button>
+        </header>
+    </nav>
+
+    <div>
+        <h1 style="text-align: center;font-family: 'Belanosima', sans-serif;">Peliculas</h1>
+        <input type="text" name="buscador" id="buscador" placeholder="Buscar peliculas...">
+
+        <ul class="listaArticulos">
+
+            <button class="peli articulo" id="showButton">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UN6NC7QUSNHHTFSRSNR4CB35EY.jpg">
+                    <h2>Spider Man Across The spider Verse</h2>
+                    <b>Duracion: 2:56Hrs</b>
+            </button>
+
+            <div id="overlay">
+                <div id="popup">
+                <button id="closeButton">X</button>
+                <h1>Spider Man Across The Spider Verse</h1>
+                <iframe src="https://hqq.ac/e/K1NtYmFJb3U4TVFUNmpRcTJjKzh4dz09" webkitAllowFullScreen mozallowfullscreen allowfullscreen frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+
+
+            <button class="peli articulo" id="FHxPaMCdDGz">
+                <img src="/img/icon.jpg">
+                <h2>Pinga</h2>
+                <b>Duracion: 2:74Hrs</b>
+                </button>
+                <script>
+                document.getElementById('FHxPaMCdDGz').addEventListener('click', function() {document.getElementById('FHxPaMCdDGx').style.display = 'block';});
+                document.getElementById('milanesin').addEventListener('click', function() {document.getElementById('FHxPaMCdDGx').style.display = 'none';});</script>
+                <style>#FHxPaMCdDGx{display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.424);z-index: 9999;}
+                    #milanesin{position: absolute;top: 10px;right: 10px;background-color: transparent;border: none;color: white;font-size: 20px;cursor: pointer;}</style>
+        
+                <div id="FHxPaMCdDGx">
+                <div id="popup">
+                <button id="milanesin">X</button>
+                <h1>Pinga</h1> <br>
+                
+                </div>
+                </div>
+                
+        </ul>
+
+    </div>
+<script src="/js/app.js"></script>
 </body>
 </html>
